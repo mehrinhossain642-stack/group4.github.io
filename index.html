@@ -4,7 +4,6 @@
   <div class="header-content">
     <img src="grouplogo.png" alt="The 4Loops logo" class="header-logo">
     <p class="logo-title">326 Group 4</p>
-    
 
   <nav>
     <a href="#">Home</a>
@@ -63,12 +62,35 @@
       height: auto;
     }
     .logo-title {
-      color: D11D1D;
+      color: #D11D1D;
       font-weight: bold;
       margin-top: 8px;
     }
     .logo-title {
       text-align: left;
+    }
+
+    /* TEAM GRID */
+    .team-grid {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 12px;
+    }
+    .team-grid li {
+      border: 1px solid #D11D1D;
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .team-name {
+      font-weight: bold;
+    }
+    .team-role {
+      color: #666;
+      font-size: 0.95em;
+      margin-top: 4px;
     }
   </style>
 
@@ -77,14 +99,33 @@
 
 <div class="box box-team">
   <h2>Team Members</h2>
-<ul>
-  <li><strong>Group Leader:</strong> Mehrin Hossain</li>
-  <li>Member: Jaineel Modi</li>
-  <li>Member: Michael Okene</li>
-  <li>Member: Minh Quang Tran</li>
-  <li>Member: Sophia Kim</li>
-  <li>Member: Lauren Sutherland</li>
-</ul>
+
+  <ul class="team-grid">
+    <li>
+      <div class="team-name">Mehrin Hossain</div>
+      <div class="team-role">Role: Group Leader</div>
+    </li>
+    <li>
+      <div class="team-name">Jaineel Modi</div>
+      <div class="team-role">Role: Member</div>
+    </li>
+    <li>
+      <div class="team-name">Michael Okene</div>
+      <div class="team-role">Role: Member</div>
+    </li>
+    <li>
+      <div class="team-name">Minh Quang Tran</div>
+      <div class="team-role">Role: Member</div>
+    </li>
+    <li>
+      <div class="team-name">Sophia Kim</div>
+      <div class="team-role">Role: Member</div>
+    </li>
+    <li>
+      <div class="team-name">Lauren Sutherland</div>
+      <div class="team-role">Role: Member</div>
+    </li>
+  </ul>
 </div>
 
 <div class="box box-overview">
@@ -111,3 +152,4 @@
 
 </body>
 </html>
+
